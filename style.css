@@ -1,0 +1,752 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Marhey:wght@300;400;500;600;700&family=MuseoModerno:ital,wght@0,300;0,400;0,800;0,900;1,200;1,500;1,800;1,900&family=Petit+Formal+Script&family=Poppins:ital,wght@0,200;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Climate Crisis', sans-serif;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: 'Marhey', sans-serif;
+
+}
+body{
+    color: #242931;
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 29%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 120px;
+    height: 120px;
+    box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+     background: #242931;
+     border-radius: 20px;
+     background-image: url(عسل\ \(2\).png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom ;
+     transition: 2s;
+     animation: kimi 15s linear forwards infinite; 
+}
+@keyframes kimi{
+   0% {
+    transform: translate(-50%, -50%) rotate(20deg);
+   
+   }
+   25%{
+    transform: translate(-250%, 120%) rotate(60deg);
+  
+  
+   }
+   50%{
+    transform: translate(500%, 130%) rotate(90deg);
+  
+   }
+   51%{
+    transform: translate(500%, 130%) rotate(90deg)scale(1.5);
+   }
+   75%{
+    transform: translate(500%, 130%) rotate(40deg);
+   }
+   76%{
+    transform: translate(500%, 130%) rotate(40deg)scale(2.0);
+   }
+   100%{
+    transform: translate(-50%, -50%) rotate(20deg);
+   }
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 75%;
+    right: 16%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 120px;
+    height: 120px;
+    box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+     background: #242931;
+     border-radius: 50%;
+     background-image: url(عسل.png);
+     background-repeat: no-repeat;
+     background-size: cover;   
+     transition: 2s;
+     animation: kim 15s linear forwards infinite; 
+}
+@keyframes kim {
+    0% {
+     transform: translate(-50%, -50%) rotate(20deg);
+    
+    }
+    25%{
+     transform: translate(150%, -220%) rotate(60deg);
+   
+   
+    }
+    50%{
+     transform: translate(-330%, -330%) rotate(90deg);
+   
+    }
+    51%{
+     transform: translate(-500%, -330%) rotate(90deg)scale(1.5);
+    }
+    75%{
+     transform: translate(-420%, -140%) rotate(40deg);
+    }
+    76%{
+     transform: translate(-420%, -140%) rotate(40deg)scale(2.0);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+}
+
+
+
+    
+#cheak{
+  
+    display: none;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+}
+.content h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 35px;
+    min-width: 500px;
+    margin-right: 10%;
+}
+.content h1{
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-top: 10px;
+     letter-spacing: 2px;
+     margin-right: 10%;
+     color: #ffb923;
+}
+.content p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 55px;
+    min-width: 500px;
+    width: 20%;
+    margin-right: 10%;
+  
+}
+.soi{
+    height: 400px;
+    width: 90px;
+    background-color:#242931;
+    position: absolute;
+    top: 60%;
+    left: 95%;
+    border-right: none;
+    
+    transform: translateY(-50%);
+      border-radius: 10%;
+    box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+
+}
+.soi .icon{
+    display: flex;
+     align-items: center;
+     flex-direction: column;
+    
+     margin-top: 20%;
+}
+.soi .icon i{
+    font-size: 20px;
+    margin: 20px;
+    margin-left: 10px;
+    color: #242931;
+    border: 1px solid black;  
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+.soi .icon i:hover{
+  
+    background-color: #daa520; 
+}
+.menu{
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+
+}
+.menu::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -150%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    height: 50px;
+    box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+     background: #242931;
+     border-top-right-radius: 15px;
+     z-index: -1;
+     transition: 2s;
+}
+.menu:hover::after{
+  left: 50%;
+}
+
+.first-menu{
+    position: fixed;
+    left: 50px;
+}
+.menu ion-icon{
+    font-size: 2rem;
+    color: black;
+     margin: 0 10px;
+     padding: 20px 20px 30px 20px;
+     border-top-left-radius:30px ;
+     border-top-right-radius:30px ;
+     box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+     transition: .4s;
+}     
+.menu ion-icon:hover{
+  
+    color: white;
+    background: #242931;
+     box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+     transform: translateY(-10px);
+}
+.menu-icon{
+ position: fixed;
+ bottom: -10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ left: 20%;
+}
+.ckor{
+    position: absolute;
+    background:		#daa520;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(600px at left 800px);
+  }
+
+body.color .menu{
+    box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+    background: #242931;
+}
+body.color .soi{
+    background-color:white;
+}
+body.color .soi .icon i{
+    color: white;
+    border: 1px solid white;  
+  
+    background-color: #242931;
+}
+body.color .soi .icon i:hover{
+   
+    background-color: #daa520; 
+}
+body.color.menu::after{
+    background: white;
+     box-shadow: 25px 15px 35px rgb(255 255 255 /0.25), 25px 15px 35px rgb(255 255 255 /0.25),inset 5px 0px 10px rgb(255 255 255 /0.5), inset -5px 5px 10px rgb(255 255 255 /0.5),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+}
+body.color .logo a{
+    color: #fff;
+}
+
+body.color .menu ion-icon{
+    background: #242931;
+    color: white;
+    box-shadow: 25px 15px 35px rgb(255 255 255 /0.25), 25px 15px 35px rgb(255 255 255 /0.25),inset 5px 0px 10px rgb(255 255 255 /0.5), inset -5px 5px 10px rgb(255 255 255 /0.5),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+}
+body.color .menu ion-icon:hover{
+    background: #242931;
+    color: black;
+    box-shadow: 25px 15px 35px rgb(255 255 255 /0.25), 25px 15px 35px rgb(255 255 255 /0.25),inset 5px 0px 10px rgb(255 255 255 /0.5), inset -5px 5px 10px rgb(255 255 255 /0.5),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+}
+.menu.active{
+    width: 0%;
+ 
+}
+body.color .nav li a{
+    color: white;
+}
+body.color .nav li a:hover{
+    color: #ffb923;
+   
+}
+.menu.active .menu-icon{
+    bottom: -100px;
+  
+}
+body.color {
+    background-color:#08162a;
+    color:#e5e5e5;;
+    --text-colar:#fff;
+  
+ 
+  }
+  body.color .menu ion-icon{
+    background: #242931;
+    color: white;
+    box-shadow: 25px 15px 35px rgb(255 255 255 /0.25), 25px 15px 35px rgb(255 255 255 /0.25),inset 5px 0px 10px rgb(255 255 255 /0.5), inset -5px 5px 10px rgb(255 255 255 /0.5),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+  }
+  body.color .hero::before
+  {
+    box-shadow: 25px 15px 35px rgb(255 255 255 /0.25), 25px 15px 35px rgb(255 255 255 /0.25),inset 5px 0px 10px rgb(255 255 255 /0.5), inset -5px 5px 10px rgb(255 255 255 /0.5),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+      background:wheat;
+      background-image: url(عسل\ \(2\).png);
+      background-repeat: no-repeat;
+      background-size: cover; 
+      background-position: bottom;     
+      
+  }
+  body.color .hero::after{
+    box-shadow: 25px 15px 35px rgb(255 255 255 /0.25), 25px 15px 35px rgb(255 255 255 /0.25),inset 5px 0px 10px rgb(255 255 255 /0.5), inset -5px 5px 10px rgb(255 255 255 /0.5),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+    background:wheat;
+    background-image: url(عسل.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+.menu::after{
+    background: white;
+     box-shadow: 25px 15px 35px rgb(255 255 255 /0.25), 25px 15px 35px rgb(255 255 255 /0.25),inset 5px 0px 10px rgb(255 255 255 /0.5), inset -5px 5px 10px rgb(255 255 255 /0.5),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+}
+  #menu-icon{
+    font-size: 40px;
+    color: var(--text-colar);
+    z-index: 10001;
+    cursor: pointer;
+    margin: 15px;
+    display: none;
+ }
+ #darkmode{
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--text-colar);
+    margin-left: 10px;
+    font-size: 2rem;
+    color: black;
+     margin: 0 10px;
+     padding: 20px 20px 30px 20px;
+     border-top-left-radius:30px ;
+     border-top-right-radius:30px ;
+     box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+     transition: .4s; 
+
+ }
+ @media screen and (max-width: 400px) {
+  
+   
+  
+   
+    
+    
+
+     
+       
+       
+
+     
+   
+
+    
+
+ 
+
+     .content{
+    
+        top: 40%;
+        right: 9%;
+        transform: translateY(-7%);
+
+    }
+    .content h3{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 30px;
+        line-height: 35px;
+        min-width: 500px;
+        margin-right: 20%;
+    }
+    .content h1{
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 10px;
+         letter-spacing: 2px;
+         margin-left: 30%;
+         color: #ffb923;
+    }
+    .content p{
+        font-size: 14px;
+         font-weight: 400;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         margin-right: 10%;
+        min-width: 250px;
+       
+       
+      
+    }
+    .soi{
+        height: 300px;
+        width: 50px;
+     
+        top: 60%;
+        left: 85%; 
+    
+    }
+    .soi .icon{
+        display: flex;
+         align-items: center;
+         flex-direction: column;
+        
+         margin-top: 20%;
+    }
+    .soi .icon i{
+        font-size: 20px;
+        margin: 20px;
+         margin-right: 30px;
+        color: #242931;
+        border: 1px solid black;  
+        border-radius: 50%;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.719);
+    }
+    .soi .icon i:hover{
+      
+        background-color: #daa520; 
+    }
+    .menu{
+        position: fixed;
+        background-color: white;
+        bottom: 0;
+        left: 7%;
+        width: 90%;
+        height: 50px;
+       
+      
+        align-items: center;
+        box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+    
+    }
+
+    .menu:hover::after{
+      left: 50%;
+    }
+    
+    .first-menu{
+        position: fixed;
+        left: 40px;
+    }
+    .menu ion-icon{
+        font-size: 1.3rem;
+        color: black;
+         margin: 0 5px;
+         padding: 10px 10px 20px 10px;
+         border-top-left-radius:20px ;
+         border-top-right-radius:20px ;
+         box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+         transition: .4s;
+    }     
+  
+    .menu-icon{
+    
+     bottom: -10px;
+     margin: 0 10px;
+     padding: 10px 10px 20px 10px;
+     border-top-left-radius:20px ;
+     border-top-right-radius:20px ;
+     box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+     transition: .4s;
+     left: 21%;
+    }
+    .ckor{
+     
+        background:		#daa520;
+        top: 4%;
+        left: 1;
+        width: 100%;
+        height: 100%;
+        clip-path: circle(300px at left 600px);
+      }
+      #darkmode{
+        font-size: 20px;
+        
+        margin-left:12px;
+      }
+
+    
+    }
+    @media screen and (min-width: 401px) and (max-width: 768px){
+        .hero{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+          
+        }
+        
+        .hero::before{
+            content: "";
+            position: absolute;
+            top: 25%;
+            left: 29%;
+            transform: translate(-50%, -50%) rotate(20deg);
+            width: 80px;
+            height: 80px;
+            box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+             background: #242931;
+             border-radius: 20px;
+             background-image: url(عسل\ \(2\).png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: bottom ;
+             transition: 2s;
+             animation: kimi 15s linear forwards infinite; 
+        }
+        @keyframes kimi{
+           0% {
+            transform: translate(-50%, -50%) rotate(20deg);
+           
+           }
+           25%{
+            transform: translate(-250%, 120%) rotate(60deg);
+          
+          
+           }
+           50%{
+            transform: translate(500%, 130%) rotate(90deg);
+          
+           }
+           51%{
+            transform: translate(500%, 130%) rotate(90deg)scale(1.5);
+           }
+           75%{
+            transform: translate(400%, 110%) rotate(30deg);
+           }
+           76%{
+            transform: translate(400%, 110%) rotate(30deg)scale(2.0);
+           }
+           100%{
+            transform: translate(-50%, -50%) rotate(10deg);
+           }
+        }
+        .hero::after{
+            content: "";
+            position: absolute;
+            top: 75%;
+            right: 16%;
+            transform: translate(-50%, -50%) rotate(20deg);
+            width: 80px;
+            height: 80px;
+            box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+             background: #242931;
+             border-radius: 50%;
+             background-image: url(عسل.png);
+             background-repeat: no-repeat;
+             background-size: cover;   
+             transition: 2s;
+             animation: kim 15s linear forwards infinite; 
+        }
+        @keyframes kim {
+            0% {
+             transform: translate(-50%, -50%) rotate(20deg);
+            
+            }
+            25%{
+             transform: translate(150%, -220%) rotate(50deg);
+           
+           
+            }
+            50%{
+             transform: translate(-330%, -330%) rotate(80deg);
+           
+            }
+            51%{
+             transform: translate(-500%, -330%) rotate(80deg)scale(1.5);
+            }
+            75%{
+             transform: translate(-320%, -120%) rotate(30deg);
+            }
+            76%{
+             transform: translate(-320%, -120%) rotate(30deg)scale(2.0);
+            }
+            100%{
+                transform: translate(-40%, -40%) rotate(10deg);
+            }
+        }
+        
+        
+       
+     
+       
+    
+        
+    
+     
+    
+         .content{
+        
+            top: 40%;
+            right: 20%;
+            transform: translateY(-7%);
+    
+        }
+        .content h3{
+            font-size: 1rem;
+            font-weight: 500;
+            margin-top: 30px;
+            line-height: 35px;
+            min-width: 500px;
+            margin-right: 20%;
+        }
+        .content h1{
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-top: 10px;
+             letter-spacing: 2px;
+             margin-left: 22%;
+             color: #ffb923;
+        }
+        .content p{
+            font-size: 17px;
+             font-weight: 400;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             
+            min-width: 50%;
+           
+           
+          
+        }
+        .soi{
+            height: 300px;
+            width: 70px;
+         
+            top: 60%;
+            left: 90%; 
+        
+        }
+        .soi .icon{
+            display: flex;
+             align-items: center;
+             flex-direction: column;
+            
+             margin-top: 20%;
+        }
+        .soi .icon i{
+            font-size: 20px;
+            margin: 20px;
+             margin-right: 35px;
+            color: #242931;
+            border: 1px solid black;  
+            border-radius: 50%;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.719);
+        }
+        .soi .icon i:hover{
+          
+            background-color: #daa520; 
+        }
+        .menu{
+            position: fixed;
+            background-color: white;
+            bottom: 0;
+            left: 5%;
+            width: 90%;
+            height: 50px;
+           
+          
+            align-items: center;
+            box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+        
+        }
+        .menu::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -10%;
+            transform: translate(-50%, -50%);
+            width:100%;
+            height: 50px;
+            box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+             background: #242931;
+             border-top-right-radius: 15px;
+             z-index: -1;
+             transition: 2s;
+        }
+        .menu:hover::after{
+          left: 50%;
+        }
+        
+        .first-menu{
+            position: fixed;
+            left: 50px;
+        }
+        .menu ion-icon{
+            font-size: 1rem;
+            color: black;
+             margin: 0 10px;
+             padding: 10px 10px 20px 10px;
+             border-top-left-radius:20px ;
+             border-top-right-radius:20px ;
+             box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+             transition: .4s;
+        }     
+      
+        .menu-icon{
+        
+         bottom: -10px;
+         margin: 0 10px;
+         padding: 10px 10px 20px 10px;
+         border-top-left-radius:20px ;
+         border-top-right-radius:20px ;
+         box-shadow: 25px 15px 35px rgb(0 0 0 /25%), 25px 15px 35px rgb(0 0 0 /25%),inset 5px 0px 10px rgb(0 0 0 /50%), inset -5px 5px 10px rgb(0 0 0 /50%),inset 30px 10px 35px 10px rgb(255 255 255 /20%);
+         transition: .4s;
+         left: 21%;
+        }
+        .ckor{
+         
+            background:		#daa520;
+            top: 4%;
+            left: 1;
+            width: 100%;
+            height: 100%;
+            clip-path: circle(500px at left 700px);
+          }
+          #darkmode{
+            font-size: 20px;
+            margin-left: 3px;
+          }
+    
+        
+        }
+        
